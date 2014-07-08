@@ -12,7 +12,7 @@ from inside the repository root folder
 
 this will run this docker image as a one shot container, it will output the url with utm parameters removed and then exit and remove itself.
 
-    docker run --rm cloudspace/ruby-utm-stripper /.rbenv/versions/2.1.2/bin/ruby run.rb [url_to_strip]
+    docker run --rm cloudspace/ruby-utm-stripper /.rbenv/versions/2.1.2/bin/ruby /run.rb "[url_to_strip]"
 
 
 ## To Run This Image For Troubleshooting
