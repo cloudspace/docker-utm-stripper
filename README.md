@@ -19,7 +19,7 @@ this will run this docker image as a one shot container, it will output the url 
 
 start the docker image in daemon mode and open port 22, set a root password
 
-    docker run -e "root_pw=cersei" -p 22 -d cloudspace/ruby-utm-stripper run.sh
+    docker run -e "root_pw=cersei" -p 22 -d cloudspace/ruby-utm-stripper
     
 find out what port number has been opened to your local system by checking the current running docker images. this port will be mapped to 22 in the container
 
