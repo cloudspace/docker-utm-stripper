@@ -11,7 +11,7 @@
 #
 #################################################################
 
-FROM cloudspace/microbase-ruby:0.1
+FROM cloudspace/microbase-ruby:0.2
 MAINTAINER Michael Orr <michael@cloudspace.com>
 
 ADD ruby_scripts/run.rb /run.rb
