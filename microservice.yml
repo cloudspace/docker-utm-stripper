@@ -1,0 +1,24 @@
+microservice:
+  name: 'UTM-Stripper'
+  description: 'strips utm parameters from a given url'
+  docker_image: 'cloudspace/utm-stripper'
+  docker_image_tag: '0.9'
+  github_url: 'https://github.com/cloudspace/docker-utm-stripper'
+  docker_hub_url: 'https://registry.hub.docker.com/u/cloudspace/utm-stripper/'
+  category: 'url'
+  tags: ['url', 'utm', 'strip']
+  developer_name: 'test'
+  developer_type: 'User'
+  published: true
+  command: '/.rbenv/versions/2.1.2/bin/ruby /run.rb [url]'
+  inputs:
+    url:
+      param_type: 'Url'
+      regex: '^https?:\\/\\/[\\S]+$'
+      required: true
+      secure: false
+      description: 'url to have the utm parameters stripped'
+  outputs:
+    url:
+      param_type: 'Url'
+      description: 'the url after the utm parameters have been stripped out'
